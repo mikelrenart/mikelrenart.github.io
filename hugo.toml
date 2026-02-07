@@ -3,13 +3,14 @@ baseURL = "https://example.com"
 # This is a "one page"-website, so we do not need these kinds of pages...
 disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT"]
 
+languageCode = "es"
 defaultContentLanguage = "es"
 
 # The name of this wonderful theme ;-).
 theme = "hugo-scroll"
 
 # The browser tab name
-title = "Jane Doe - Nutrition Coach & Chef Consultant"
+title = "Asesoría Las Llanas - Laboral, Contable y Fiscal"
 
 # In order to add version information in the page's footer set to true.
 # enableGitInfo = true
@@ -21,13 +22,13 @@ enableEmoji = true
 [params]
 
     # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
-    favicon = "images/favicon.png"
+    favicon = "images/logo.png"
 
     # These "images" are used for the structured data templates. This will show up, when
     # services like Twitter or Slack want to generate a preview of a link to your site.
     # See https://gohugo.io/templates/internal#twitter-cards and https://gohugo.io/templates/internal#open-graph.
     # NOT the actual header background image, go to _index.md instead
-    images = ["images/cover-image.jpg"]
+    images = ["images/virtual_office.png"]
 
     # When set true, it creates a visual guard (partially transparent rounded box), preventing non-ideal background images from interfering with title/description headings
     # Ideal images are homogenous around the centre and contrasting to the text.
@@ -38,21 +39,21 @@ enableEmoji = true
     # Another "title" :-). This one is used as the site_name on the Hugo's internal
     # opengraph structured data template.
     # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-    title = "Jane Doe - Nutrition Coach & Chef Consultant"
+    title = "Asesoría Las Llanas - Laboral, Contable y Fiscal"
 
     # The "description" of your website. This is used in the meta data of your generated html.
-    description = "Nutrition Coach & Chef Consultant"
+    description = "Asesoría Laboral, Contable y Fiscal en Sestao."
 
     # Show a menu of languages available
-    language_menu = true
+    language_menu = false
 
     # Show also a language menu item for the current language, if false only
     # show the remaining languages
-    show_current_lang = true
+    show_current_lang = false
 
     # A "copyright"-line to be added at the bottom of the page.
     # Hint: Plain HTML is supported in here as well. So you may e.g. add a link to your legal imprint-page.
-    copyright = "© Jane Doe"
+    copyright = "© 2026 Asesoría Las Llanas"
 
     # This theme will, by default, inject a design-by-line at the bottom of the page.
     # You can turn it off, but we would really appreciate if you don’t :-)
@@ -76,71 +77,16 @@ enableEmoji = true
     showFooterLinks = false
 
     [params.meta]
-        keywords = "some, keywords, for, seo, you, know, google, duckduckgo, and, such"
+        keywords = "asesoría, laboral, contable, fiscal, sestao, subvenciones, empresas"
 
     [[params.contacts]]
-        label = "phone"
-        value = "+49 1111 555555"
-        url = "tel:+49 1111 555555"
+        label = "teléfono"
+        value = "94 496 29 36"
+        url = "tel:+34944962936"
         icon = "fa fa-phone"
 
     [[params.contacts]]
         label = "email"
-        value = "mail@janedoe.com"
-        url = "mailto:mail@janedoe.com"
+        value = "info@asesorialasllanas.es"
+        url = "mailto:info@asesorialasllanas.es"
         icon = "fa fa-envelope"
-
-    [[params.contacts]]
-        label = "GitHub"
-        value = "github.com/zjedi/hugo-scroll"
-        url = "https://github.com/zjedi/hugo-scroll"
-        icon = "fa-brands fa-github"
-
-    # Add additional contacts here!
-    # [[params.contacts]]
-    #     label = ""
-    #     value = ""
-    #     url = ""
-    #     icon = ""
-
-# Define additional languages
-[languages]
-  [languages.en]
-    weight = 10
-    languageName = "English"
-    contentDir = "content/en"
-
-  [languages.de]
-    title = "Erika Musterfrau - Ernährungshilfe & Kochberatung"
-    weight = 20
-    contentDir = "content/de"
-    languageName = "Deutsch"
-  
-  [languages.es]
-    title = "Mi Nuevo Sitio Hugo"
-    weight = 30
-    contentDir = "content/es"
-    languageName = "Español"
-    description = "Descripción de mi nuevo sitio Hugo"
-    copyright = "© Mi Sitio Hugo"
-
-    [languages.es.params.meta]
-        keywords = "algunas, palabras clave, para, seo"
-
-    [[languages.es.params.contacts]]
-        label = "teléfono"
-        value = "+34 111 222 333"
-        url = "tel:+34 111 222 333"
-        icon = "fa fa-phone"
-
-    [[languages.es.params.contacts]]
-        label = "correo electrónico"
-        value = "contacto@misitiohugo.com"
-        url = "mailto:contacto@misitiohugo.com"
-        icon = "fa fa-envelope"
-
-    [[languages.es.params.contacts]]
-        label = "GitHub"
-        value = "github.com/mikelrenart/mikelrenart.github.io"
-        url = "https://github.com/mikelrenart/mikelrenart.github.io"
-        icon = "fa-brands fa-github"
