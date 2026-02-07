@@ -3,7 +3,7 @@ baseURL = "https://example.com"
 # This is a "one page"-website, so we do not need these kinds of pages...
 disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT"]
 
-defaultContentLanguage = "en"
+defaultContentLanguage = "es"
 
 # The name of this wonderful theme ;-).
 theme = "hugo-scroll"
@@ -115,3 +115,32 @@ enableEmoji = true
     weight = 20
     contentDir = "content/de"
     languageName = "Deutsch"
+  
+  [languages.es]
+    title = "Mi Nuevo Sitio Hugo"
+    weight = 30
+    contentDir = "content/es"
+    languageName = "Español"
+    description = "Descripción de mi nuevo sitio Hugo"
+    copyright = "© Mi Sitio Hugo"
+
+    [languages.es.params.meta]
+        keywords = "algunas, palabras clave, para, seo"
+
+    [[languages.es.params.contacts]]
+        label = "teléfono"
+        value = "+34 111 222 333"
+        url = "tel:+34 111 222 333"
+        icon = "fa fa-phone"
+
+    [[languages.es.params.contacts]]
+        label = "correo electrónico"
+        value = "contacto@misitiohugo.com"
+        url = "mailto:contacto@misitiohugo.com"
+        icon = "fa fa-envelope"
+
+    [[languages.es.params.contacts]]
+        label = "GitHub"
+        value = "github.com/mikelrenart/mikelrenart.github.io"
+        url = "https://github.com/mikelrenart/mikelrenart.github.io"
+        icon = "fa-brands fa-github"
